@@ -1,18 +1,17 @@
 package org.dz.solution;
 
 public class NumberReverser {
-    public void reversAndPrint(final int number, final  int amount) {
+    public void reversAndPrint(final int number) {
         int result;
         int delimiter = 1;
-
-        for (int i = delimiter; i <= amount; i++) {
+        String strNumber = String.valueOf(number);
+        int length = strNumber.length();
+        for (int i = 1; i <= length ; i++) {
             delimiter = delimiter * 10;
             result = number % delimiter;
             result = result / (delimiter / 10);
             System.out.print(result);
+
         }
-
-
-
     }
 }
