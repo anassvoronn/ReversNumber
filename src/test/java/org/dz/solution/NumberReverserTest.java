@@ -12,13 +12,13 @@ public class NumberReverserTest {
     @Test
     public void reversAndPrintFor0() {
         NumberReverser reverser = new NumberReverser();
-        reverser.reversAndPrint(443934);
+        reverser.reversAndPrint(0);
     }
 
     @Test
     public void reversAndPrintFor1() {
         NumberReverser reverser = new NumberReverser();
-        reverser.reversAndPrint(1);
+        reverser.reversAndPrint(2);
     }
 
     @Test
@@ -27,4 +27,15 @@ public class NumberReverserTest {
         reverser.reversAndPrint(1050806);
     }
 
+    @Test
+    public void reversAndPrintFor10() {
+        NumberReverser reverser = new NumberReverser();
+        reverser.reversAndPrint(11);
+    }
+
+    @Test
+    public void reversAndPrintFor12() {
+        NumberReverser reverser = new NumberReverser();
+        reverser.reversAndPrint(12);
+    }
 }
