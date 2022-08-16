@@ -1,18 +1,21 @@
 package org.dz.solution;
 
 public class NumberReverser {
-    public void reversAndPrint(final int number) {
-        if (number == 0){
-            System.out.print(0);
+    public int[] revers(final int number) {
+        if (number == 0) {
+            return new int[]{0};
         }
+        String numberStr = String.valueOf(number);
+        int[] reversedNumber = new int[numberStr.length()];
         int result;
         int delimiter = 1;
-        while (delimiter <= number) {
+        for (int i = 0; delimiter <= number; i++) {
             delimiter = delimiter * 10;
             result = number % delimiter;
             result = result / (delimiter / 10);
-            System.out.print(result);
+            reversedNumber[i] = result;
 
         }
+        return reversedNumber;
     }
 }
